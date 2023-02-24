@@ -6,7 +6,8 @@ namespace ConsoleAnagram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new Anagram().Reverse(new string("input")));
+            Console.WriteLine(new Anagram().StringReverse(new string("   !")));
+            Console.WriteLine(new Anagram().StringReverse(new string(" hello  !")));
         }
     }
 }
