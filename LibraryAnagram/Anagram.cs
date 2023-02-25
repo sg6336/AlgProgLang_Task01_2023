@@ -61,7 +61,7 @@ namespace LibraryAnagram
                 answer += tmp + " ";
             }
 
-            return answer.Trim();
+            return answer.Remove(answer.Length - 1);
         }
     }
 }
