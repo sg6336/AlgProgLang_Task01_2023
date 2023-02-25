@@ -50,7 +50,7 @@ namespace LibraryAnagram
             return answer;
         }
 
-        public string StringReverse(string input)
+        public string Reverse(string input)
         {
             string[] strArr = input.Split(" ");
             string answer = new string("");

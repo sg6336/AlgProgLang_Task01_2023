@@ -6,8 +6,8 @@ namespace ConsoleAnagram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new Anagram().StringReverse(new string("   !")));
-            Console.Write(new Anagram().StringReverse(new string(" emosewa\n  !\t!")));
+            Console.WriteLine(new Anagram().Reverse(new string("   !")));
+            Console.Write(new Anagram().Reverse(new string(" emosewa\n  !\t!")));
             Console.Write("1");
         }
     }
