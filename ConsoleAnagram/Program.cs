@@ -6,9 +6,20 @@ namespace ConsoleAnagram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new Anagram().Reverse(new string("   !")));
-            Console.Write(new Anagram().Reverse(new string(" emosewa\n  !\t!")));
-            Console.Write("1");
+            Console.WriteLine(Messages.Greetings);
+            ConsoleKeyInfo e;
+            Anagram anagram = new Anagram();
+ 
+            do
+            {
+                Console.WriteLine(Messages.Input);
+ 
+                string input = Console.ReadLine();
+ 
+                Console.WriteLine(Messages.Output + anagram.Reverse(input));
+                Console.WriteLine(Messages.LoopInput);
+                e = Console.ReadKey();
+            } while (e.Key == ConsoleKey.Enter);
         }
     }
 }
