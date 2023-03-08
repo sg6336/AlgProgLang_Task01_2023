@@ -4,17 +4,6 @@ using System.Linq;
 
 namespace LibraryAnagram
 {
-    public class IndexSymbol
-    {
-        public int index;
-        public string symbol = new string("");
- 
-        public IndexSymbol(int index, string symbol)
-        {
-            this.index = index;
-            this.symbol = symbol;
-        }
-    }
     public class Anagram
     {
         public string Reverse(string input)
@@ -48,7 +37,7 @@ namespace LibraryAnagram
             int indexChar = 0;
             int indexArr = 0;
 
-            foreach (Char c in input)
+            foreach (char c in input)
             {
                 if (!char.IsLetter(c))
                 {
@@ -69,6 +58,18 @@ namespace LibraryAnagram
             }
 
             return answer;
+        }
+    }
+
+    class IndexSymbol
+    {
+        public int index;
+        public string symbol = new string("");
+
+        public IndexSymbol(int index, string symbol)
+        {
+            this.index = index;
+            this.symbol = symbol;
         }
     }
 }

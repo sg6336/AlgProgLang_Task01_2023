@@ -9,6 +9,7 @@ namespace LibraryAnagramTest
         [Test]
         [TestCase("", "")]
         [TestCase("Word", "droW")]
+        [TestCase("Привіт", "тівирП")]
         [TestCase("Word in a sentence", "droW ni a ecnetnes")]
         public void SimpleReverse(string input, string output)
         {

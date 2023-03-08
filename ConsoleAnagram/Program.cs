@@ -1,4 +1,5 @@
 ﻿using LibraryAnagram;
+using System.Text;
 
 namespace ConsoleAnagram
 {
@@ -6,6 +7,10 @@ namespace ConsoleAnagram
     {
         static void Main(string[] args)
         {
+            //Encoding u32 = Encoding.UTF32;
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
+
             Console.WriteLine(Messages.Greetings);
             ConsoleKeyInfo e;
             Anagram anagram = new Anagram();
